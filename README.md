@@ -13,8 +13,9 @@ You need the following files in your blog sources to make the theme work properl
 ### Favicon stuff
 
 - `./static/apple-touch-icon.png`
-- `./static/favicon-16x16.png`
-- `./static/favicon-32x32.png`
+- `./static/favicon-16x16.svg`
+- `./static/favicon-32x32.svg`
+- `./static/favicon-120x120.svg`
 - `./static/favicon.ico`
 - `./static/site.webmanifest`
 - `./static/safari-pinned-tab.svg`
@@ -23,8 +24,9 @@ The theme generates the following set of related HTML headers:
 
 ```html
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | relURL }}">
+<link rel="icon" type="image/svg+xml" sizes="16x16" href="{{ "/favicon-16x16.svg" | relURL }}">
+<link rel="icon" type="image/svg+xml" sizes="32x32" href="{{ "/favicon-32x32.svg" | relURL }}">
+<link rel="icon" type="image/svg+xml" sizes="120x120" href="{{ "/favicon-120x120.svg" | relURL }}">
 <link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
 <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | relURL }}" color="#5a2673">
 <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
