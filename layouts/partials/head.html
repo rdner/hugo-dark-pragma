@@ -20,7 +20,9 @@
 <meta name="author" content="{{ .Site.Params.AuthorName }}">
 {{end}}
 
+{{if (or .Description .Summary) }}
 <meta name="description" content="{{ .Description | default .Summary }}" />
+{{end}}
 {{if .Keywords }}
 <meta name="keywords" content="{{ delimit .Keywords ", " ", " }}" />
 {{end}}
@@ -30,11 +32,15 @@
 <meta name="twitter:site" content="{{ .Site.Params.Twitter }}">
 {{end}}
 <meta name="twitter:title" content="{{ .Site.Title }}: {{if .Site.Params.AuthorName }}{{ .Site.Params.AuthorName }} – {{end}}{{ .Title }}">
+{{if (or .Description .Summary) }}
 <meta name="twitter:description" content="{{ .Description | default .Summary }}">
+{{end}}
 <meta name="twitter:image" content="{{if $cover }}{{ $cover.Permalink }}{{else}}{{ "/images/logo.svg" | absURL }}{{end}}">
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Site.Title }}: {{if .Site.Params.AuthorName }}{{ .Site.Params.AuthorName }} – {{end}}{{ .Title }}" />
+{{if (or .Description .Summary) }}
 <meta property="og:description" content="{{ .Description | default .Summary }}" />
+{{end}}
 <meta property="og:image" content="{{if $cover }}{{ $cover.Permalink }}{{else}}{{ "/images/logo.svg" | absURL }}{{end}}" />
