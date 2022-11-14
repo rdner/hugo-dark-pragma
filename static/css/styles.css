@@ -88,6 +88,11 @@ a {
 a:hover {
 	background-color: #8952A2;
 }
+a[target=_blank] {
+	text-decoration-color: #D7DADC;
+	text-decoration-style: dashed;
+	text-decoration: underline;
+}
 
 hr {
 	border-color: #2D0047;
