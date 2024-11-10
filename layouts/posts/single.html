@@ -2,11 +2,11 @@
 <html lang="{{ .Page.Language.Lang }}">
 	<head>
 		{{partial "head.html" . }}
-		{{if .NextPage }}
-		<link rel="next" href="{{ .NextPage.RelPermalink }}" type="text/html">
+		{{if .Next }}
+		<link rel="next" href="{{ .Next.RelPermalink }}" type="text/html">
 		{{end}}
-		{{if .PrevPage }}
-		<link rel="prev" href="{{ .PrevPage.RelPermalink }}" type="text/html">
+		{{if .Prev }}
+		<link rel="prev" href="{{ .Prev.RelPermalink }}" type="text/html">
 		{{end}}
 	</head>
 	<body>

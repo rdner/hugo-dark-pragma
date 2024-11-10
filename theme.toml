@@ -5,7 +5,7 @@ description = "A nice purple theme for a blog."
 homepage = "https://github.com/rdner/hugo-dark-pragma"
 tags = ["dark", "purple", "blog"]
 features = []
-min_version = "0.37.1"
+min_version = "0.138.0"
 
 [author]
   name = "Denis Rechkunov"
