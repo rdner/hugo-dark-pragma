@@ -7,7 +7,11 @@
 		{{ range .Site.Menus.main }}
 		<a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
 		{{ end }}
-
+		{{if .Site.Params.LinkedIn }}
+		<a class="nav-item" href="https://www.linkedin.com/in/{{ .Site.Params.LinkedIn }}" rel="nofollow noreferrer" target="_blank">
+			<img alt="LinkedIn account" class="icon" src="{{ "images/linkedin.svg" | relURL }}">
+		</a>
+		{{end}}
 		{{if .Site.Params.Github }}
 		<a class="nav-item" href="https://github.com/{{ .Site.Params.Github }}" rel="nofollow noreferrer" target="_blank">
 			<img alt="github account" class="icon" src="{{ "images/github.svg" | relURL }}">

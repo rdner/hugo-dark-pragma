@@ -78,9 +78,13 @@ startLevel = 1
 UserPicture = "https://url-to-your-avatar" # your userpic that will be used for the small author description in posts
 AuthorName = "John Doe" # your name
 Description = "Some more detailed description"
+
+# external social media handles
+LinkedIn = "johndoe" # this will show a LinkedIn icon/link in top right
 Github = "johndoe" # this will show a GitHub icon/link in top right
-Reddit = "johndoe" # this will show a Reddit icon/link in top right
 BlueSky = "johndoe" # this will show a BlueSky icon/link in top right
+Reddit = "johndoe" # this will show a Reddit icon/link in top right
+
 Email = "john@doe.local" # this email goes to the footer of the web-site as your contact
 License = "Any HTML you want" # this will be placed as raw HTML in the footer after words "licensed under", so feel free to insert links and small images with inline styles.
 
