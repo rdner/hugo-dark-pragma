@@ -62,22 +62,27 @@ pygmentsCodefences = true
 
 # recommended markup parameters
 [markup]
-  defaultMarkdownHandler = "blackFriday"
- [markup.blackFriday]
-    hrefTargetBlank = true
-    nofollowLinks = true
-    noreferrerLinks = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+tabWidth = 2
+
+[markup.tableOfContents]
+endLevel = 3
+startLevel = 1
 
 # theme-specific parameters
 [params]
-  UserPicture = "https://url-to-your-avatar" # your userpic that will be used for the small author description in posts
-  AuthorName = "John Doe" # your name
-  Description = "Some more detailed description"
-  Github = "johndoe" # this will show a GitHub icon/link in bottom right
-  Reddit = "johndoe" # this will show a Reddit icon/link in bottom right
-  Twitter = "johndoe" # this will show a Twitter icon/link in bottom right
-  Email = "john@doe.local" # this email goes to the footer of the web-site as your contact
-  License = "Any HTML you want" # this will be placed as raw HTML in the footer after words "licensed under", so feel free to insert links and small images with inline styles.
+UserPicture = "https://url-to-your-avatar" # your userpic that will be used for the small author description in posts
+AuthorName = "John Doe" # your name
+Description = "Some more detailed description"
+Github = "johndoe" # this will show a GitHub icon/link in top right
+Reddit = "johndoe" # this will show a Reddit icon/link in top right
+BlueSky = "johndoe" # this will show a BlueSky icon/link in top right
+Email = "john@doe.local" # this email goes to the footer of the web-site as your contact
+License = "Any HTML you want" # this will be placed as raw HTML in the footer after words "licensed under", so feel free to insert links and small images with inline styles.
 
 # this is an example content structure that you might want to have.
 # the section builds the main navigation panel in the header of the web-site, aligned to the right. Many root level items can cause layout problems on small screens
