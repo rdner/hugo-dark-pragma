@@ -1,15 +1,15 @@
-<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}" type="text/css">
+<title>{{ .Site.Title }}: {{if .Site.Params.AuthorName }}{{ .Site.Params.AuthorName }} – {{end}}{{ .Title }}</title>
 
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relURL }}">
-<link rel="icon" type="image/svg+xml" sizes="16x16" href="{{ "/favicon-16x16.svg" | relURL }}">
-<link rel="icon" type="image/svg+xml" sizes="32x32" href="{{ "/favicon-32x32.svg" | relURL }}">
-<link rel="icon" type="image/svg+xml" sizes="120x120" href="{{ "/favicon-120x120.svg" | relURL }}">
-<link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
-<link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | relURL }}" color="#5a2673">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5a2673">
 
 <link rel="author" href="{{ "/about" | absURL }}" type="text/html">
 <link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" type="text/html">
-<title>{{ .Site.Title }}: {{if .Site.Params.AuthorName }}{{ .Site.Params.AuthorName }} – {{end}}{{ .Title }}</title>
+<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}" type="text/css">
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
 <meta name="application-name" content="{{ .Site.Title }}">
@@ -19,7 +19,6 @@
 {{if .Site.Params.AuthorName }}
 <meta name="author" content="{{ .Site.Params.AuthorName }}">
 {{end}}
-
 {{if (or .Description .Summary) }}
 <meta name="description" content="{{ .Description | default .Summary }}" />
 {{end}}
