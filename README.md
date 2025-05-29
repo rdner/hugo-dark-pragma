@@ -83,6 +83,7 @@ Description = "Some more detailed description"
 LinkedIn = "johndoe" # this will show a LinkedIn icon/link in top right
 Github = "johndoe" # this will show a GitHub icon/link in top right
 BlueSky = "johndoe" # this will show a BlueSky icon/link in top right
+Mastodon = "mastodon.social/@example" # this will show a Mastodon icon/link in top right
 Reddit = "johndoe" # this will show a Reddit icon/link in top right
 
 Email = "john@doe.local" # this email goes to the footer of the web-site as your contact

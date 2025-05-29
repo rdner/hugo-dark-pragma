@@ -14,7 +14,7 @@
 		{{end}}
 		{{if .Site.Params.Github }}
 		<a class="nav-item" href="https://github.com/{{ .Site.Params.Github }}" rel="nofollow noreferrer" target="_blank">
-			<img alt="github account" class="icon" src="{{ "images/github.svg" | relURL }}">
+			<img alt="Github account" class="icon" src="{{ "images/github.svg" | relURL }}">
 		</a>
 		{{end}}
 		{{if .Site.Params.BlueSky }}
@@ -22,9 +22,14 @@
 			<img alt="BlueSky account" class="icon" src="{{ "images/bluesky.svg" | relURL }}">
 		</a>
 		{{end}}
+		{{if .Site.Params.Mastodon }}
+		<a class="nav-item" href="https://{{ .Site.Params.Mastodon }}" rel="me" target="_blank">
+			<img alt="Mastodon account" class="icon" src="{{ "images/mastodon.svg" | relURL }}">
+		</a>
+		{{end}}
 		{{if .Site.Params.Reddit }}
 		<a class="nav-item" href="https://reddit.com/u/{{ .Site.Params.Reddit }}" rel="nofollow noreferrer" target="_blank">
-			<img alt="reddit profile" class="icon" src="{{ "images/reddit.svg" | relURL }}">
+			<img alt="Reddit profile" class="icon" src="{{ "images/reddit.svg" | relURL }}">
 		</a>
 		{{end}}
 		<a class="nav-item" href="{{ "index.xml" | relURL }}" target="_blank">
