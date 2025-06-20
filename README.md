@@ -89,7 +89,7 @@ Reddit = "johndoe" # this will show a Reddit icon/link in top right
 Email = "john@doe.local" # this email goes to the footer of the web-site as your contact
 License = "Any HTML you want" # this will be placed as raw HTML in the footer after words "licensed under", so feel free to insert links and small images with inline styles.
 
-CustomHead = "<script src="https://example.com"></script>" # for additional custom "head" tag content. Rendered at the end of "head".
+CustomHead = "<script src=\"https://example.com\"></script>" # for additional custom "head" tag content. Rendered at the end of "head".
 
 # this is an example content structure that you might want to have.
 # the section builds the main navigation panel in the header of the web-site, aligned to the right. Many root level items can cause layout problems on small screens
