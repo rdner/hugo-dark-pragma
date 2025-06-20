@@ -43,3 +43,7 @@
 <meta property="og:description" content="{{ .Description | default .Summary }}" />
 {{end}}
 <meta property="og:image" content="{{if $cover }}{{ $cover.Permalink }}{{else}}{{ "/images/logo.svg" | absURL }}{{end}}" />
+
+{{if .Site.Params.CustomHead }}
+{{ .Site.Params.CustomHead | safeHTML }}
+{{end}}
